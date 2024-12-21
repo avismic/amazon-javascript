@@ -26,7 +26,7 @@ products.forEach((product)=>{
             </div>
 
             <div class="product-price">
-              ${formatCurency(matchingProduct.priceCents)}
+              ${formatCurency(product.priceCents)}
             </div>
 
             <div class="product-quantity-container">
@@ -76,7 +76,5 @@ document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
     addToCart(productId);
     updateCartQuantity();
 
-    console.log(cartQuantity)
-    console.log(cart);
   })
 })
