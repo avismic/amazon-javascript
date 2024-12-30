@@ -4,3 +4,7 @@ date:21/12/2024 15:30
 date:29/12/2024 12:31
   completed till 18 hrs 24 mins 14 secs
   aiming to finish this video before 2025
+date:30/12/2024 00:44
+  completed till 20 hrs 23 mins 37 secs
+  we still right on our aim
+  backend is cool
