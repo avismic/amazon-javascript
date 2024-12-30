@@ -1,4 +1,5 @@
 import {formatCurrency} from '../scripts/utils/money.js';
+
 export function getProduct(productId){
   let matchingProduct;
     products.forEach((product)=>{
@@ -96,6 +97,9 @@ export function loadProductsFetch(){
     });
 
     console.log('load products');
+  })
+  .catch(()=>{
+    console.log('unexpected error, pls try again later');
   });
   return promise;
 }
@@ -106,8 +110,6 @@ export function loadProductsFetch(){
 
 export function loadProducts(fun){
   const xhr = new XMLHttpRequest();
-
-
 
   xhr.addEventListener('load',()=>{
     products = JSON.parse(xhr.response).map((productDetails)=>{
@@ -121,9 +123,14 @@ export function loadProducts(fun){
     fun();
   });
 
+  xhr.addEventListener('error',(error)=>{
+    console.log('unexpected error. pls try again later');
+  });
+
   xhr.open('GET', 'https://supersimplebackend.dev/products');
   xhr.send();
 }
+
 /*
 export const products = [
   {
