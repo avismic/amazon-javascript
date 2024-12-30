@@ -8,3 +8,7 @@ date:30/12/2024 00:44
   completed till 20 hrs 23 mins 37 secs
   we still right on our aim
   backend is cool
+date:30/12/2024 14:00
+  finished this video
+  yay
+  probably will get more into backend
